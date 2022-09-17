@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        td{
+            border: 2px solid;
+        }
+    </style>
 </head>
 <body>
     <h1>Desarrollo web</h1>
@@ -104,5 +109,194 @@ header{
     baclegrouwd-color:blach;
 }
 </code>
+<h2>Tablas</h2>
+<p>La etiqueta &lttable&gt sirve para crear o insertar una tabla, en esta misma estara la etiqueta &ltthead&gt que se encargara del titulos de la tabla, la etiqueta &lttbody&gt es para el cuerpo de la tabla y por ultimo la etiqueta &lttfoot&gt que es el pie de la tabla </p>
+<b>Ejemplo</b>
+<pre>
+    &lttable&gt 
+        &ltthead&gt
+            &lttr&gt
+                &ltth&gt titulo uno  &lt/th&gt
+                &ltth&gt titulo dos  &lt/th&gt
+            &lt/tr&gt
+        &lt/thead&gt
+        &lttbody&gt
+            &lttr&gt
+                &lttd&gt cuerpo de la tabla  &lt/td&gt
+                &lttd&gt cuerpo de la tabla &lt/td&gt
+            &lt/tr&gt
+        &lt/tbody&gt
+        &lttfoot&gt
+            &lttr&gt
+                &lttd&gt pie de la tabla &lt/td&gt
+                &lttd&gt pie de la tabla &lt/td&gt
+            &lt/tr&gt
+        &lt/tfoot&gt
+    &lt/table&gt
+</pre>
+
+<table> 
+<thead>
+    <tr>
+        <th> titulo uno  </th>
+        <th> titulo dos  </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td> cuerpo de la tabla </td>
+        <td> cuerpo de la tabla </td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td> pie de la tabla  </td>
+        <td> pie de la tabla   </td>
+    </tr>
+</tfoot>
+</table>
+
+<b>Ejemplo 2</b>
+<p>En este ejemplo utilizaremos dos etiquetas mas las cuales son:  &lttd colspan="nu"&gt___&lt/td&gt la etiqueta de colspan se recorrera dos columnas y &lttd rowspan="nu"&gt__&lt/td&gt la etiqueta de rospan se recorreran las filas, estas dos tienen que ir al inicio de donde quieres que se expandan y se podren obsevar de la siguientes forma:</p>
+<pre>
+&lttable&gt 
+    &ltthead&gt
+        &lttr&gt
+            &ltth&gtNo.&lt/th&gt
+            &ltth&gtproducto&lt/th&gt
+            &ltth&gt cantidad de productos&lt/th&gt
+            &ltth&gtcantidad productos vendidos&lt/th&gt
+            &ltth&gtNombre empresa &lt/th&gt
+        &lt/tr&gt
+    &lt/thead&gt
+    &lttbody&gt
+    &lttr&gt
+            &lttd&gt1&lt/td&gt
+            &lttd&gtGalletas&lt/td&gt
+            &lttd&gt50&lt/td&gt
+            &lttd&gt13&lt/td&gt
+            &lttd rowspan="3"&gtMarinela&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gt2&lt/td&gt
+            &lttd&gtBarritas&lt/td&gt
+            &lttd&gt25&lt/td&gt
+            &lttd&gt80&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gt3&lt/td&gt
+            &lttd&gtDonas&lt/td&gt
+            &lttd&gt100&lt/td&gt
+            &lttd&gt52&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gt4&lt/td&gt
+            &lttd&gtcoca&lt/td&gt
+            &lttd&gt120&lt/td&gt
+            &lttd&gt84&lt/td&gt
+            &lttd rowspan="2"&gtcoca-cola&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gt5&lt/td&gt
+            &lttd&gtfanta&lt/td&gt
+            &lttd&gt10&lt/td&gt
+            &lttd&gt5&lt/td&gt
+        &lt/tr&gt
+    &lt/tbody&gt
+    &lttfoot&gt
+        &lttr&gt
+            &lttd colspan="3"&gttotal de productos vendidos&lt/td&gt
+            &lttd&gt90&lt/td&gt
+        &lt/tr&gt
+    &lt/tfoot&gt
+    &lt/table&gt
+</pre>
+<br>
+<table > 
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>producto</th>
+            <th> cantidad de productos</th>
+            <th>cantidad productos vendidos</th>
+            <th>Nombre empresa </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Galletas</td>
+            <td>50</td>
+            <td>13</td>
+            <td rowspan="3">Marinela</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Barritas</td>
+            <td>80</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Donas</td>
+            <td>100</td>
+            <td>52</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>coca</td>
+            <td>120</td>
+            <td>84</td>
+            <td rowspan="2">coca-cola</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>fanta</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+ 
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">total de productos vendidos</td>
+            <td>90</td>
+        </tr>
+    </tfoot>
+    </table>
+
 </body>
 </html>
+<h2>Multimedia</h2>
+<h3>Video</h3>
+<p>la sigueinte etiqueta funciona para poder insertar y asi poder observar videos </p>
+<b>Ejemplo</b>
+&ltvideo src="vid/video1.mp4" controls width="400"&gt&lt/video&gt<br>
+<video src="vid/video1.mp4" controls width="400" autoplay></video>
+<p>Se agregara el mismo video en diferentes formatos</p>
+<pre>
+&ltvideo width="500" controls&gt
+    &ltsource src="vid/video1.mp4"&gt
+    &ltsource src="vid/video1.mp4"&gt
+&lt/video&gt
+</pre>
+<br>
+<video width="500" controls>
+    <source src="vid/video1.mp4">
+    <source src="vid/video1.mp4">
+</video>
+<br>
+<h3>Imagen</h3>
+<p>esta etiqueta inserta la imagen que requieramos insertar</p>
+<b>Ejemplo</b>
+&ltimg src="img/imagen1.jpg" width="500"&gt
+<br>
+<img src="img/imagen1.jpg" width="500" alt="foco">
+<h3>Audio</h3>
+<p>esta etiqueta inserta un audio que requieramos insertar</p>
+<b>Ejemplo</b>
+&ltaudio src="aud/audio.mp3" &gt&lt/audio&gt
+<br>
+<audio src="aud/audio.mp3" controls></audio>
+
+
